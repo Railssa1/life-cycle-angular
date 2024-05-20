@@ -1,0 +1,8 @@
+<form class="add-item" (ngSubmit)="isEditando ? editarItem() : adicionarItem()">
+  <input
+    type="text"
+    name="item"
+    placeholder="Digite o item que deseja adicionar"
+    [(ngModel)]="valorItem">
+  <button type="submit">{{textoBotao}}</button>
+</form>
